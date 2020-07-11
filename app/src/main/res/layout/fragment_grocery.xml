@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        tools:context=".screen.GroceryFragment">
+
+        <ImageView
+            android:id="@+id/imageBackgroundGrocery"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_220"
+            android:scaleType="fitXY"
+            android:src="@drawable/grocery_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="@dimen/dp_180"
+            android:layout_height="@dimen/dp_32"
+            android:alpha="0.7"
+            android:autofillHints="@string/text_hint"
+            android:background="@drawable/custom_edit_text"
+            android:hint="@string/text_hint"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="@+id/imageBackgroundGrocery"
+            app:layout_constraintEnd_toEndOf="@+id/imageBackgroundGrocery"
+            app:layout_constraintStart_toStartOf="@+id/imageBackgroundGrocery"
+            app:layout_constraintTop_toTopOf="@+id/imageBackgroundGrocery" />
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:alpha="0.8"
+            android:background="@drawable/ic_exit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_32"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/ic_search"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintBottom_toTopOf="@+id/imageBackgroundGrocery"
+            app:layout_constraintStart_toEndOf="@+id/editTextSearch"
+            app:layout_constraintTop_toBottomOf="@+id/imageBackgroundGrocery" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerProduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageBackgroundGrocery"
+            app:reverseLayout="false" />
+
+        <ImageView
+            android:id="@+id/imageNotFound"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/not_found"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageBackgroundGrocery" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:src="@drawable/ic_compare"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

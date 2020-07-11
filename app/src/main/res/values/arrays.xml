@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="layout_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_heart</item>
+    </integer-array>
+
+    <integer-array name="carousel_images">
+        <item>@drawable/carousel_one</item>
+        <item>@drawable/carousel_two</item>
+        <item>@drawable/carousel_three</item>
+        <item>@drawable/carousel_four</item>
+        <item>@drawable/carousel_five</item>
+    </integer-array>
+
+    <integer-array name="ingredient_images">
+        <item>@drawable/dairy</item>
+        <item>@drawable/egg</item>
+        <item>@drawable/gluten</item>
+        <item>@drawable/grain</item>
+        <item>@drawable/peanut</item>
+        <item>@drawable/seafood</item>
+        <item>@drawable/sesame</item>
+        <item>@drawable/shellfish</item>
+        <item>@drawable/soy</item>
+        <item>@drawable/sulfite</item>
+        <item>@drawable/tree_nut</item>
+        <item>@drawable/wheat</item>
+    </integer-array>
+
+    <string-array name="ingredient_names">
+        <item>Dairy</item>
+        <item>Egg</item>
+        <item>Gluten</item>
+        <item>Grain</item>
+        <item>Peanut</item>
+        <item>Seafood</item>
+        <item>Sesame</item>
+        <item>Shellfish</item>
+        <item>Soy</item>
+        <item>Sulfite</item>
+        <item>Tree Nut</item>
+        <item>Wheat</item>
+    </string-array>
+</resources>

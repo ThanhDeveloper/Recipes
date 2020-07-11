@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Foodies</string>
+    <string name="home">Home</string>
+    <string name="favorites">Favorites</string>
+    <string name="ingredient_recycler">ingredient_recycler</string>
+    <string name="title">title</string>
+    <string name="textRecipesDescription">Recipes Suggestion</string>
+    <string name="product_name">Product name</string>
+    <string name="product_image">Product image</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ingredient_image">Ingredient image</string>
+    <string name="text_quality">0</string>
+    <string name="text_dish_types">DishTypes:</string>
+    <string name="text_ingredient">Ingredient:</string>
+    <string name="text_tutorial">Tutorial:</string>
+    <string name="text_similar">Similar</string>
+    <string name="text_ingredient_detail">- %s \n</string>
+    <string name="text_instruction_detail">- Step %s \n</string>
+    <string name="actionBar_Grocery">Grocery</string>
+    <string name="text_hint">Bean, Soy, Flowers, etc…</string>
+</resources>
